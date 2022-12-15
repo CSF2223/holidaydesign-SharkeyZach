@@ -1,16 +1,16 @@
 /*
 Color Palette
-background color: #222222
-primary: #22A39F
-secondary: #F3EFE0
-tertiary: #59C1BD
-accent: #9277AC
+background color: #C1D343
+primary: #990000
+secondary: #CFE8A9
+tertiary: #810000
+accent: #FF971D
 vegasGold: #c5b358
 white: #fff
 black: #000  
 */
 
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mountains+of+Christmas:wght@400;700&display=swap');
 
 html { 
     /* If we add any padding or border onto an element it does not affect he width of the element */
@@ -21,12 +21,81 @@ html {
      margin:0 4rem;
      letter-spacing: 0.8rem;
      text-align: center;
-     border-bottom: 1px solid #826F66;
-     border-right: 1px solid #826F66;
-     border-left: 1px solid #826F66;
+     border-bottom: 2px solid #CFE8A9;
+     border-right: 2px solid #CFE8A9;
+     border-left: 2px solid #CFE8A9;
      padding: 0.5rem;
      box-shadow: 4px 4px 5px rgba(0,0,0,0.4);
      text-transform: uppercase;
      font-size: 1.1rem;
  }
  
+ cite {
+    font-size: 2rem;
+}
+
+p {
+    font-size: 1.2rem;
+}
+ 
+ body {
+     background-color: #C1D343;
+     color: #990000;
+     font-family: 'Mountains of Christmas';
+ }
+ 
+ .imageCard {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 7rem 4rem;
+}
+
+.imageCard img {
+    width: 100%;
+    height: auto;
+    border-radius: 30px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.imageCard a {
+    text-decoration: none;
+    color: #826F66;
+}
+
+.cardText {
+    color: #C69B7B;
+    text-align: center;
+    padding: 2rem;
+    border-radius: 30px;
+    margin-top: 2rem;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+
+@media (min-width: 768px) {
+    header {
+        font-size:1.6rem;
+    }
+    
+    .Celebrations {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        left: 0;
+    }
+    
+    .Cultures {
+         display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        right: 0;
+    }
+    
+    .imageCard {
+        max-width: 28%;
+    }
+}
