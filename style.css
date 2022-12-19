@@ -12,9 +12,9 @@ black: #000
 
 @import url('https://fonts.googleapis.com/css2?family=Mountains+of+Christmas:wght@400;700&display=swap');
 
-html { 
-    /* If we add any padding or border onto an element it does not affect he width of the element */
-    box-sizing: border-box;
+html{
+     font-size: 100%;    /*Default font size is 16px - 62.5% 16 is 10px -
+                             1 rem (relative unit) now will be equivalent to 10px} */
 }
 
  header{
@@ -87,15 +87,12 @@ p {
         left: 0;
     }
     
-    .Cultures {
-         display: flex;
-        flex-direction: row;
-        justify-content: space-evenly;
-        flex-wrap: wrap;
-        right: 0;
+    .cardText {
+        
     }
     
+    
     .imageCard {
-        max-width: 28%;
+        max-width: 60%;
     }
 }
